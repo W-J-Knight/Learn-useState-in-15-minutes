@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 function App() {
-  // const [count, setCount] = useState(4)
-  // use function inside  useState large complex variable expamle
-  const [count, setCount] = useState(() => {
-    console.log("run function")
-    return 4
-  })
+  // dont use a state object
+  // const [state, setState] = ({count: 4, theme: 'blue'})
+  // instead use to different states values
+  const [count, setCount] = useState(4)
+  const [theme, setTheme] = useState(4)
   const decrementCount = () =>{
     setCount((prevCount) => prevCount - 1)
   };
