@@ -29,3 +29,5 @@ code myproject
 6. Put arrow function inside the useState when call to set the display value.At git commit 9ac2536.
 
 7. Use function inside  useState large complex variable.At git commit 07b5a9c.
+
+8. Use two state differents in App.js. At git commit 1a27a5c.
