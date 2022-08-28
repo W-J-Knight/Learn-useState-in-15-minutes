@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(4)
-
+  // const [count, setCount] = useState(4)
+  // use function inside  useState large complex variable expamle
+  const [count, setCount] = useState(() => {
+    console.log("run function")
+    return 4
+  })
   const decrementCount = () =>{
     setCount((prevCount) => prevCount - 1)
   };

@@ -25,3 +25,6 @@ code myproject
 
 5. Make two arrow functions using useState to control the display value. At git commit 459f695.
 
+
+Put arrow function inside the useState when call to set the display value.At git commit 9ac2536.
+
