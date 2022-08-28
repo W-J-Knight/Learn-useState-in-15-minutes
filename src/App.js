@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [count, setCount] = useState(4)
+
+  const decrementCount = () =>{
+    setCount(count - 1)
+  };
+  const increaseCount = () => {
+    setCount(count + 1)
+  };
+  
   return (
     <>
-      <button>-</button>
-      <span>0</span>
-      <button>+</button>
+      <button onClick={decrementCount}>-</button>
+      <span>{count}</span>
+      <button onClick={increaseCount}>+</button>
     </>
   )
 
